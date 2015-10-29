@@ -1,2 +1,2 @@
 # SparkOverlapper
-Find overlap of DNA sequences using Apache Spark
+Find overlaps of DNA sequences using Apache Spark
