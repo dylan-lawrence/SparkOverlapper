@@ -1,0 +1,128 @@
+******************************************************************************************
+** Currently in file: ../src/main.cpp
+** Function start: main()
+******************************************************************************************
+PRINTING ARGUMENTS
+./new_omega -r ecoli_multi_readlength_unique.fasta -e ecoli_multi_readlength_unique.align 
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: buildOverlapGraphFromFiles()
+******************************************************************************************
+readFilename: ecoli_multi_readlength_unique.fasta
+numOfUniqueRead=40278
+readIDListInFile.size=40278
+edgeFilename: ecoli_multi_readlength_unique.align
+numberOfEdges = 25122
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: contractCompositePaths()
+******************************************************************************************
+      5737 composite Edges merged.
+******************************************************************************************
+** Function stop: contractCompositePaths(), Elapsed time: 0.072748 seconds, Memory usage: 42 - 42 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: removeDeadEndNodes()
+******************************************************************************************
+Dead-end nodes detected: 5734
+Dead-end nodes removed: 5734
+Dead-end edges removed: 2868
+******************************************************************************************
+** Function stop: removeDeadEndNodes(), Elapsed time: 0.023544 seconds, Memory usage: 44 - 42 = 2 MB.
+******************************************************************************************
+numberOfEdges = 7912
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: contractCompositePaths()
+******************************************************************************************
+         0 composite Edges merged.
+******************************************************************************************
+** Function stop: contractCompositePaths(), Elapsed time: 0.001164 seconds, Memory usage: 44 - 44 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: removeDeadEndNodes()
+******************************************************************************************
+Dead-end nodes detected: 0
+Dead-end nodes removed: 0
+Dead-end edges removed: 0
+******************************************************************************************
+** Function stop: removeDeadEndNodes(), Elapsed time: 0.00605 seconds, Memory usage: 44 - 44 = 0 MB.
+******************************************************************************************
+numberOfEdges = 7912
+******************************************************************************************
+** Function stop: buildOverlapGraphFromFiles(), Elapsed time: 4.55211 seconds, Memory usage: 44 - 0 = 44 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: removeDeadEndNodes()
+******************************************************************************************
+Dead-end nodes detected: 0
+Dead-end nodes removed: 0
+Dead-end edges removed: 0
+******************************************************************************************
+** Function stop: removeDeadEndNodes(), Elapsed time: 0.005973 seconds, Memory usage: 43 - 43 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: contractCompositePaths()
+******************************************************************************************
+         0 composite Edges merged.
+******************************************************************************************
+** Function stop: contractCompositePaths(), Elapsed time: 0.001158 seconds, Memory usage: 43 - 43 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: removeSimilarEdges()
+******************************************************************************************
+0 edges to remove
+0 edges removed.
+******************************************************************************************
+** Function stop: removeSimilarEdges(), Elapsed time: 0.005306 seconds, Memory usage: 43 - 43 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: reduceTrees()
+******************************************************************************************
+Flow not computed.
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: reduceLoops()
+******************************************************************************************
+Flow not computed.
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: calculateFlow()
+******************************************************************************************
+Calling CS2
+CS2 finished
+******************************************************************************************
+** Function stop: calculateFlow(), Elapsed time: 0.330257 seconds, Memory usage: 52 - 43 = 9 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: removeAllSimpleEdgesWithoutFlow()
+******************************************************************************************
+Edges removed: 1676
+******************************************************************************************
+** Function stop: removeAllSimpleEdgesWithoutFlow(), Elapsed time: 0.012058 seconds, Memory usage: 48 - 48 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Currently in file: ../src/OverlapGraph.cpp
+** Function start: printGraphAndRemovedEdges()
+******************************************************************************************
+Aisee graph written.
+Print contig 1 is done!
+Total contig length: 3532197 BP
+Number of Nodes in the graph: 4539
+Number of Edges in the graph: 2280
+Highest Degree Read 29757 has 4 neighbors.
+In Edges: 1 Out Edges: 3 Simple Edges: 0 Composite Edges: 4
+String: CTTCGCCACCGGTATTCCTCCAGATCTCTACGCATTTCACCGCTACACCTGGAATTCTACCCCCCTCTACGAGACTCAAGCTTGCCAGTATCAGATGCAGTTCCCAGGTTGAGCCCGGGGATTTCACATCTGACTTAACAAACCGCCTGCGTGCGCTTTACGCCCAGTAATTCCGATTAACGCTTGCACCCTCCGTATTACCGCGGCTGCTGGCACGGAGTTAGCCGGTGCTTCTTCTGCGGGTAACGTCAATGAGCAAAGGTATTAACTTTACTCCCTTCCTCCCCGCTGAAAGTACTTTACAACCCGAAGGCCTTCTTCATACACGCGGCATGGCTGCATCAGGCTTGCGCCCATTGTGCAATATTCCCCACTGCTGCCTCCCGTAGGAGTCTGGACCGTGTCTCAGTTCCAGTGTGGCTGGTCATCCTCTCAGACCAGCTAGGGATCGTCGCCTAGGTGAGCCGTTACCCCACCTACTAGCTAATCCCATCTGGGCA
+******************************************************************************************
+** Function stop: printGraphAndRemovedEdges(), Elapsed time: 0.109447 seconds, Memory usage: 48 - 48 = 0 MB.
+******************************************************************************************
+******************************************************************************************
+** Function stop: main(), Elapsed time: 5.01836 seconds, Memory usage: 48 - 0 = 48 MB.
+******************************************************************************************
