@@ -39,17 +39,17 @@ object overlapper{
 
     // Intialize readsListFile
     // val readsListFile = "10reads_forward.fasta"
-    def makeSubStr(k:string) : ArrayBuffer[String] = {
-    	val substrings = ArrayBuffer[String]
+    def makeSubStr(k:String, v:String) : ArrayBuffer[Array[String]] = {
+    	val substrings = ArrayBuffer[Array[String]]
     	for {start <- 0 to k.length; end <- (start + 25) to s.length} yield //loop over all possible substrings of length 25 or greater
-    	substrings += k.substring(start, end) //append the substring
-	 return substrings
+    	substrings += (k.substring(start, end), v) //append the substring array
+	return substrings
     }
     val readsListFile = sc.textFile(args(0))
     //turn into key value RDD where the read is the key and the number of the read is the value (ATCG, 1)
     val keyRDD = readsListFile.map(line => (line.split(" ")(1), line.split(" ")(0))
     //Now we need to generate a rdd for every K, V that is of type (SubString K, V) for every substring of at least len 25
-    val Substrings = keyRDD.flatMap(read: (String, Int) => (read._1.makeSubStr))
+    val Substrings = keyRDD.flatMap(read: (String, String) => makeSubStr(read._1, read._2))
     //Then simply group by key and filter for values with len of 2 or more
     val overlaps = Substrings.groupByKey().filter(reads =>  reads.length >= 2)
 	
