@@ -44,7 +44,7 @@ object overlapper{
     //Now we need to generate a rdd for every K, V that is of type (SubString K, V) for every substring of at least len 25
     val Substrings = keyRDD.flatMap((read: (String, String)) => makeSubStr(read._1, read._2))
     //Then simply group by key and filter for values with len of 2 or more
-    val overlaps = Substrings.groupByKey().filter((reads: (String, List[String])) =>  reads._2.length >= 2)
+    val overlaps = Substrings.groupByKey().filter((reads: (String, Iterable[String])) =>  reads._2.size >= 2)
 	
     println(s"====================================================")
     println(s"Find Overlaps: done")
